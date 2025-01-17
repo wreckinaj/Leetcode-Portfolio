@@ -41,3 +41,7 @@ Output:
 | 3           |
 +-------------+
 Explanation: Only products 1 and 3 are both low fat and recyclable.
+
+Topic: Database:
+
+Explanation: The query simply uses a SELECT statement to return the specific ids given the conditions, and is trivial to those who know how to use SQL.
