@@ -36,3 +36,7 @@ Constraints:
 -109 <= nums[i] <= 109
 
 Topics: Array, Hash Table, Sorting
+
+Explanation: An obvious solution is brute force, thus using a nested loop to determine if values at two distinct indices in the array are equal. However, because of the nested for loop, we would have an O(n^2) time complexity. We could also potentially sort the function, then loop through the array once to see if we get an instance where two consecutive values in the array are equal. However, this would require an O(n log n) time complexity by using the built-in sort function for the specific language.
+
+The final solution in this code uses a set. We loop through the array once, and determine if the observed value is in our set. If yes, then we have found a duplicate and return true. If no, then we append the observed value into our set. If we loop through the entire array, then no duplicate is found, and we return false.
